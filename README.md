@@ -2,3 +2,4 @@
 Felipe Honorio Moraes
 Bruno Stracke
 
+Beatriz Costa
