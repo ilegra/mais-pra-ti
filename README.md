@@ -9,3 +9,5 @@ Beatriz Costa
 Lucas Vezaro Tonolli
 
 Felipe Simões
+
+Eliseu Brito
