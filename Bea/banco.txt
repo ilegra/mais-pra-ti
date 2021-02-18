@@ -41,7 +41,7 @@ rua varchar(45),
 cidade varchar(45),
 cep varchar(45),
 data_nasc date,
-sexo varchar(5),
+sexo varchar(2),
 
 cod_curso int,
 PRIMARY KEY (matricula),
@@ -52,7 +52,7 @@ FOREIGN KEY (cod_curso)
 
 CREATE TABLE telefone(
 codigo int(4) AUTO_INCREMENT,
-cod_aluno varchar(45) ,
+cod_aluno int ,
 telefone varchar(45),
 PRIMARY KEY (codigo),
 FOREIGN KEY (cod_aluno) 
@@ -100,7 +100,7 @@ PRIMARY KEY (codigo),
 FOREIGN KEY (cod_oferta) 
         REFERENCES oferta(codigo),
 FOREIGN KEY (cod_aluno) 
-        REFERENCES alunos(codigo),
+        REFERENCES alunos(matricula),
 
 );
 
