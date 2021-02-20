@@ -11,7 +11,6 @@ public class superhomem{
         forcaFinal = 1;
 
         visao = 10;
-        System.out.println(dias);
 
         if(dias > 365){
             dias = dias - 365;
@@ -22,13 +21,13 @@ public class superhomem{
                 }
 
             }
-            System.out.println("Sua forca e: " + forcaFinal +" humanos");
-            System.out.println("Sua distância da visao de raio-x e: " + visao+" cm");
+            System.out.printf("Sua forca e: %.2f humanos\n" , forcaFinal );
+            System.out.printf("Sua distancia da visao de raio-x e: %.2f cm\n" ,visao);
         }else{
 
         
-            System.out.println("Sua forca e: " + forcaFinal+" humanos");
-            System.out.println("Sua distância da visao de raio-x e: 0 cm" );
+            System.out.printf("Sua forca e: %.2f humanos\n" , forcaFinal );
+            System.out.printf("Sua distancia da visao de raio-x e: 0 cm" );
         }
   
         
