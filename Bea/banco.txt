@@ -1,0 +1,106 @@
+
+CREATE TABLE departamentos(
+codigo int(4) AUTO_INCREMENT,
+nome varchar(45),
+telefone varchar(45),
+centro varchar(45),
+PRIMARY KEY (codigo)
+);
+
+CREATE TABLE professores(
+codigo int(4) AUTO_INCREMENT,
+nome varchar(45),
+cpf varchar(45),
+telefone varchar(45),
+cod_dep int,
+PRIMARY KEY (codigo),
+FOREIGN KEY (cod_dep) 
+        REFERENCES departamentos(codigo),     
+);
+
+CREATE TABLE curso(
+codigo int(4) AUTO_INCREMENT,
+nome varchar(45),
+tipo varchar(45),
+coordenador int,
+vice int,
+cod_dep int,
+PRIMARY KEY (codigo),
+FOREIGN KEY (coordenador) 
+        REFERENCES professores(codigo),
+FOREIGN KEY (vice) 
+        REFERENCES professores(codigo),
+FOREIGN KEY (cod_dep) 
+        REFERENCES departamentos(codigo),     
+);
+CREATE TABLE alunos(
+matricula int(4) AUTO_INCREMENT,
+nome varchar(45),
+cpf varchar(45),
+rua varchar(45),
+cidade varchar(45),
+cep varchar(45),
+data_nasc date,
+sexo varchar(2),
+
+cod_curso int,
+PRIMARY KEY (matricula),
+
+FOREIGN KEY (cod_curso) 
+        REFERENCES curso(codigo),     
+);
+
+CREATE TABLE telefone(
+codigo int(4) AUTO_INCREMENT,
+cod_aluno int ,
+telefone varchar(45),
+PRIMARY KEY (codigo),
+FOREIGN KEY (cod_aluno) 
+        REFERENCES alunos(matricula)
+);
+
+CREATE TABLE disciplina(
+codigo int(4) AUTO_INCREMENT,
+descricao varchar(45) ,
+nome varchar(45),
+creditos int,
+cod_dep int,
+cod_prof int,
+
+PRIMARY KEY (codigo),
+FOREIGN KEY (cod_dep) 
+        REFERENCES departamentos(codigo),
+FOREIGN KEY (cod_prof) 
+        REFERENCES professores(codigo),
+
+);
+
+CREATE TABLE oferta(
+codigo int(4) AUTO_INCREMENT,
+horario varchar(45) ,
+
+cod_disciplina int,
+cod_prof int,
+
+PRIMARY KEY (codigo),
+FOREIGN KEY (cod_disciplina) 
+        REFERENCES disciplina(codigo),
+FOREIGN KEY (cod_prof) 
+        REFERENCES professores(codigo),
+
+);
+
+#preciso criar uma tabela intermediaria entre alunos e oferta, para saber os alunos que se matricularam
+CREATE TABLE matricula(
+codigo int(4) AUTO_INCREMENT,
+cod_oferta int,
+cod_aluno int,
+
+PRIMARY KEY (codigo),
+FOREIGN KEY (cod_oferta) 
+        REFERENCES oferta(codigo),
+FOREIGN KEY (cod_aluno) 
+        REFERENCES alunos(matricula),
+
+);
+
