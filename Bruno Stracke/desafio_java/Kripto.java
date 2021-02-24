@@ -8,10 +8,6 @@ public class Kripto {
         this.dias = dias;
     }
 
-    public int getDias() {
-        return dias;
-    }
-
     public double calculaForca(){
         double forca = 1.0;
         for(int i = 366; i <= dias; i++){
