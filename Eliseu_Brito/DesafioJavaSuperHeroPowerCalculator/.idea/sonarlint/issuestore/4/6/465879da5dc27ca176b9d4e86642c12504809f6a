@@ -1,13 +1,13 @@
 
+T
+java:S1068	"7Remove this unused "diaInicioVisaoCalor" private field.(›ŸíÇ8²¡ßòş.
 Z	java:S106"9Replace this use of System.out or System.err by a logger.(±¦ßüûÿÿÿÿ8²¡ßòş.
+Z	java:S106#"9Replace this use of System.out or System.err by a logger.(·µş„üÿÿÿÿ8²¡ßòş.
+U	java:S106)"9Replace this use of System.out or System.err by a logger.(Èƒ¥8²¡ßòş.
 U	java:S106'"9Replace this use of System.out or System.err by a logger.(åÃÉâ8²¡ßòş.
 Z	java:S106"9Replace this use of System.out or System.err by a logger.(ŠÒ‚úÿÿÿÿ8—¡ĞÏû.
-U	java:S106)"9Replace this use of System.out or System.err by a logger.(Èƒ¥8²¡ßòş.
+
+java:S1450	"bRemove the "diaInicioVisaoCalor" field and declare it as a local variable in the relevant methods.(›ŸíÇ8²¡ßòş.
 U	java:S106"9Replace this use of System.out or System.err by a logger.(ïîÜ8²¡ßòş.
 U	java:S106!"9Replace this use of System.out or System.err by a logger.(İÜÜÂ8¶˜¼Ïû.
 Z	java:S106"9Replace this use of System.out or System.err by a logger.(ğ–À¸üÿÿÿÿ8†¹¶Ïû.
-Z	java:S106#"9Replace this use of System.out or System.err by a logger.(·µş„üÿÿÿÿ8²¡ßòş.
-
-java:S1450	"bRemove the "diaInicioVisaoCalor" field and declare it as a local variable in the relevant methods.(›ŸíÇ8²¡ßòş.
-T
-java:S1068	"7Remove this unused "diaInicioVisaoCalor" private field.(›ŸíÇ8²¡ßòş.
