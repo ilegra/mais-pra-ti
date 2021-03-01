@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class superhomem{
+public class Superhomem{
     public static void main(String[] args){
         int dias, i;
         double forcaFinal,visao;
