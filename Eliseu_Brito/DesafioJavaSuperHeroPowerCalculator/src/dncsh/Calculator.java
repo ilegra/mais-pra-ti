@@ -7,9 +7,9 @@ public class Calculator {
     private double forca = 1;
     private double distancia = 10;
     private int diaInicioVisaoCalor;
-    DecimalFormat df = new DecimalFormat("0.00");
-    String forcaFormatada;
-    String distanciaFormatada;
+    private DecimalFormat df = new DecimalFormat("0.00");
+    private String forcaFormatada;
+    private String distanciaFormatada;
 
     public void forcaSuperHomem(int numerosDiasNaTerra) {
         for (int i = 366; i <= numerosDiasNaTerra; i++) {
