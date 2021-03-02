@@ -1,13 +1,12 @@
 
-T
-java:S1068	"7Remove this unused "diaInicioVisaoCalor" private field.(›ŸíÇ8²¡ßòş.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(±¦ßüûÿÿÿÿ8²¡ßòş.
-Z	java:S106#"9Replace this use of System.out or System.err by a logger.(·µş„üÿÿÿÿ8²¡ßòş.
-U	java:S106)"9Replace this use of System.out or System.err by a logger.(Èƒ¥8²¡ßòş.
-U	java:S106'"9Replace this use of System.out or System.err by a logger.(åÃÉâ8²¡ßòş.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ŠÒ‚úÿÿÿÿ8—¡ĞÏû.
-
-java:S1450	"bRemove the "diaInicioVisaoCalor" field and declare it as a local variable in the relevant methods.(›ŸíÇ8²¡ßòş.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ïîÜ8²¡ßòş.
-U	java:S106!"9Replace this use of System.out or System.err by a logger.(İÜÜÂ8¶˜¼Ïû.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ğ–À¸üÿÿÿÿ8†¹¶Ïû.
+Q
+java:S1128"4Remove this unused import 'java.text.DecimalFormat'.(¤°Ó˜8ÜĞû.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(øÂ­¨8 Ñ±Ïû.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(íõØÆıÿÿÿÿ8†¹¶Ïû.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(¡˜¤˜8ŸÓåÏû.
+T	java:S106 "9Replace this use of System.out or System.err by a logger.(âìş:8ÌùŒĞû.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(­é­—üÿÿÿÿ8—¡ĞÏû.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(àü–8™½çÏû.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(çøÿ£8¶˜¼Ïû.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ïåÎ“øÿÿÿÿ8Øˆ°Ïû.
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(ìÔï‰üÿÿÿÿ8¶˜¼Ïû.
