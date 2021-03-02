@@ -1,0 +1,150 @@
+--
+-- Estrutura da tabela Departamento
+--
+
+CREATE TABLE Departamento(
+   id_dep int NOT NULL AUTO_INCREMENT,
+   nome varchar(20) NOT NULL,
+   telefone int NOT NULL,
+   centro varchar(20) NOT NULL,
+   PRIMARY KEY (id_dep)    
+);
+
+--
+-- Extraindo dados da tabela Departamento
+--
+
+INSERT INTO Departamento (id_dep , nome, telefone, centro) VALUES
+('catlos', 549965502, 'das');
+
+--
+-- Estrutura da tabela Disciplina
+--
+
+CREATE TABLE Disciplina(
+   id_disc int NOT NULL AUTO_INCREMENT,
+   nome varchar(45) NOT NULL,
+   descricao varchar(45) NOT NULL,
+   numero_credito int NOT NULL,
+   id_dep int,
+   PRIMARY KEY (id_disc),
+   FOREIGN KEY (id_dep) REFERENCES Departamento(id_dep)
+) 
+
+--
+-- Extraindo dados da tabela Disciplina
+--
+
+INSERT INTO `Disciplina(nome, descricao, numero_credito, id_dep) VALUES
+(port, 'sobre os porque', 11, 1);
+
+--
+-- Estrutura da tabela Professor
+--
+
+CREATE TABLE Professor (
+   id_prof int NOT NULL AUTO_INCREMENT,
+   nome varchar(45) NOT NULL,
+   cpf varchar(45) NOT NULL,
+   telefone int(11) NOT NULL,
+   id_dep int,
+   PRIMARY KEY (id_prof),
+   FOREIGN KEY (id_dep) REFERENCES Departamento(id_dep)
+);
+
+--
+-- Extraindo dados da tabela Professor
+--
+
+INSERT INTO Professor (nome, cpf, telefone, id_dep) VALUES
+('pp', '000000000', 5456456, 1);
+
+--
+-- Estrutura da tabela `oferta`
+--
+
+CREATE TABLE Oferta (
+   id_oferta int NOT NULL AUTO_INCREMENT,
+   horario time NOT NULL,
+   id_dep int,
+   id_prof int,
+   PRIMARY KEY (id_oferta),
+   FOREIGN KEY (id_dep) REFERENCES Departamento(id_dep),
+   FOREIGN KEY (id_prof) REFERENCES Professor(id_prof)
+);
+
+--
+-- Extraindo dados da tabela Oferta
+--
+
+INSERT INTO Oferta (horario, id_dep, id_prof) VALUES
+('17:12:53', 1, 1);
+
+
+--
+-- Estrutura da tabela `curso`
+--
+
+CREATE TABLE Curso (
+   id_curso int NOT NULL AUTO_INCREMENT,
+   id_coodernador_professor varchar(20) NOT NULL,
+   id_viceCoodernador_professor varchar(20) NOT NULL,
+   id_dep int,
+   PRIMARY KEY (id_oferta),
+   FOREIGN KEY (id_dep) REFERENCES Departamento(id_dep)
+);
+
+--
+-- Extraindo dados da tabela Curso
+--
+
+INSERT INTO Curso (id_coodernador_professor, id_viceCoodernador_professor, id_dep) VALUES
+('dea','das',5);
+
+
+--
+-- Estrutura da tabela `aluno`
+--
+
+CREATE TABLE Aluno (
+   id_aluno int(11) NOT NULL,
+   nome varchar(45),
+   numMatricula int(11),
+   cpf varchar(45),
+   endereco varchar(45),
+   DataNasc date,
+   telefone int,
+   id_dep int,
+   id_curso int,
+   PRIMARY KEY (id_aluno),
+   FOREIGN KEY (id_dep) REFERENCES Departamento(id_dep),
+   FOREIGN KEY (id_curso) REFERENCES Curso(id_curso)
+);
+
+--
+-- Extraindo dados da tabela Aluno
+--
+
+INSERT INTO Aluno(nome, numMatricula, cpf, Endereco, DataNasc, id_dep, `id_curso`, `telefone`) VALUES
+('ret', 44, '000000', 'iuuioo', '2021-02-02', 1, 4, 544564);
+
+
+--
+-- Estrutura da tabela Telefone_Aluno
+--
+
+CREATE TABLE Telefone_Aluno(
+   id_Telefone_Aluno int NOT NULL AUTO_INCREMENT,
+   telefone1 int,
+   telefone2 int,
+   telefone int,
+   PRIMARY KEY (id_Telefone_Aluno),
+   FOREIGN KEY (telefone) REFERENCES Aluno(telefone)
+);
+
+--
+-- Extraindo dados da tabela Telefone_Aluno
+--
+
+INSERT INTO Telefone_Aluno(telefone1, telefone2, telefone) VALUES
+(879,454,5);
