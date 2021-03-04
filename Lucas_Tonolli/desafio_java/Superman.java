@@ -16,7 +16,7 @@ public class Superman {
         this.forcaHumana = forcaHumano;
     }
 
-    public void SuperPowerCalculator() {
+    public void superPowerCalculator() {
         if (dias <= 365) {
             System.out.println("O Superman não teve tempo suficiente para se adaptar!");
         } else {
@@ -27,14 +27,14 @@ public class Superman {
         System.out.println("A a distância máxima da visão de calor do Superman é "+ distanciaVisaoCalor +" cm");
 }
 
-    public double ForcaSuperman() {
+    public double forcaSuperman() {
         for (int i = dias - 365; i > 0; i--) {
             forca += (forca * 0.03);
         }
         return forca;
     }
 
-    public double VisaoDeCalor() {
+    public double visaoDeCalor() {
         for (int i = dias - 365; i > 0; i--) {
             forca += (forca * 0.03);
             if(forca>=(forcaHumana*10)&& !desbloqueioVisao){
