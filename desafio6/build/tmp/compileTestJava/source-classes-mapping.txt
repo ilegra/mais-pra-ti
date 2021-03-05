@@ -1,0 +1,4 @@
+br/com/unittestexample/gereciamento/GerenciamentoTarefasTest.java
+ br.com.unittestexample.gereciamento.GerenciamentoTarefasTest
+br/com/unittestexample/gereciamento/GerenciamentoListaTarefasTest.java
+ br.com.unittestexample.gereciamento.GerenciamentoListaTarefasTest
