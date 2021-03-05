@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.unittestexample.gereciamento.GerenciamentoTarefasTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-03-05T17:14:37" hostname="DESKTOP-672QCQN" time="0.006">
+  <properties/>
+  <testcase name="testCriarTarefa_comId_validacaoPorTarefa()" classname="br.com.unittestexample.gereciamento.GerenciamentoTarefasTest" time="0.002"/>
+  <testcase name="testCriarTarefa_comId()" classname="br.com.unittestexample.gereciamento.GerenciamentoTarefasTest" time="0.0"/>
+  <testcase name="testObterTarefa()" classname="br.com.unittestexample.gereciamento.GerenciamentoTarefasTest" time="0.0"/>
+  <testcase name="testExcluirTarefa()" classname="br.com.unittestexample.gereciamento.GerenciamentoTarefasTest" time="0.0"/>
+  <testcase name="testEditarTarefa()" classname="br.com.unittestexample.gereciamento.GerenciamentoTarefasTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
