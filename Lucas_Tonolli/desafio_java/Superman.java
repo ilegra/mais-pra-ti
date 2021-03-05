@@ -21,7 +21,7 @@ public class Superman {
             System.out.println("O Superman não teve tempo suficiente para se adaptar!");
         } else {
             distanciaVisaoCalor = visaoDeCalor();
-            forca = ForcaSuperman();
+            forca = forcaSuperman();
         }
         System.out.println("A força do Superman é "+forca);
         System.out.println("A a distância máxima da visão de calor do Superman é "+ distanciaVisaoCalor +" cm");
