@@ -20,8 +20,8 @@ public class Superman {
         if (dias <= 365) {
             System.out.println("O Superman não teve tempo suficiente para se adaptar!");
         } else {
-            distanciaVisaoCalor = VisaoDeCalor();
-            forca = ForcaSuperman();
+            distanciaVisaoCalor = visaoDeCalor();
+            forca = forcaSuperman();
         }
         System.out.println("A força do Superman é "+forca);
         System.out.println("A a distância máxima da visão de calor do Superman é "+ distanciaVisaoCalor +" cm");
