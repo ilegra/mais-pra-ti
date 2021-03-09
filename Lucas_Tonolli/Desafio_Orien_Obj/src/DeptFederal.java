@@ -1,4 +1,5 @@
 public class DeptFederal extends Candidato{
+<<<<<<< Updated upstream
     private int CodCandidato;
     private int NumVotos;
 
@@ -6,12 +7,18 @@ public class DeptFederal extends Candidato{
         super(nome);
         this.CodCandidato = CodCandidato;
         this.NumVotos = 0;
+=======
+
+    public DeptFederal(String nome, int codCandidato){
+        super(nome,codCandidato);
+>>>>>>> Stashed changes
     }
 
     @Override
     public String Info(){
         return "Candidato a Deputado Federal";
     }
+<<<<<<< Updated upstream
 
     public int getCodCandidato() {
         return CodCandidato;
@@ -33,4 +40,6 @@ public class DeptFederal extends Candidato{
         NumVotos = NumVotos;
     }
 
+=======
+>>>>>>> Stashed changes
 }

@@ -1,4 +1,5 @@
 public class DeptEstadual extends Candidato{
+<<<<<<< Updated upstream
     private int NumVotos;
     private int CodCandidato;
 
@@ -14,6 +15,12 @@ public class DeptEstadual extends Candidato{
         super(nome);
         this.CodCandidato = CodCandidato;
         this.NumVotos = 0;
+=======
+
+
+    public DeptEstadual(String nome, int codCandidato){
+        super(nome,codCandidato);
+>>>>>>> Stashed changes
     }
 
     @Override
@@ -22,6 +29,7 @@ public class DeptEstadual extends Candidato{
     }
 
 
+<<<<<<< Updated upstream
     private void setNumVotos(int NumVotos){
         this.NumVotos=NumVotos;
     }
@@ -31,5 +39,8 @@ public class DeptEstadual extends Candidato{
     public int getNumVotos(){
         return NumVotos;
     }
+=======
+
+>>>>>>> Stashed changes
 
 }
