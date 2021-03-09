@@ -1,11 +1,7 @@
+
 public abstract class Candidato {
     private String nome;
-<<<<<<< Updated upstream
 
-
-    public Candidato(String nome){
-        this.nome = nome;
-=======
     public int codCandidato;
     public int numVotos;
 
@@ -13,7 +9,7 @@ public abstract class Candidato {
         this.nome = nome;
         this.codCandidato = codCandidato;
         this.numVotos = 0;
->>>>>>> Stashed changes
+
     }
 
     public abstract String Info();
@@ -26,8 +22,31 @@ public abstract class Candidato {
         this.nome = nome;
     }
 
-<<<<<<< Updated upstream
-=======
+
+}
+
+public abstract class Candidato {
+    private String nome;
+    public int codCandidato;
+    public int numVotos;
+
+    public Candidato(String nome,int codCandidato){
+        this.nome = nome;
+        this.codCandidato = codCandidato;
+        this.numVotos = 0;
+
+    }
+
+    public abstract String Info();
+
+    public String getNome() {
+        return nome;
+    }
+
+    private void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public int getCodCandidato() {
         return codCandidato;
     }
@@ -45,5 +64,6 @@ public abstract class Candidato {
         return numVotos;
     }
 
->>>>>>> Stashed changes
+
 }
+
