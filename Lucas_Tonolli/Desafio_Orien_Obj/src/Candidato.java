@@ -1,30 +1,3 @@
-
-public abstract class Candidato {
-    private String nome;
-
-    public int codCandidato;
-    public int numVotos;
-
-    public Candidato(String nome,int codCandidato){
-        this.nome = nome;
-        this.codCandidato = codCandidato;
-        this.numVotos = 0;
-
-    }
-
-    public abstract String Info();
-
-    public String getNome() {
-        return nome;
-    }
-
-    private void setNome(String nome) {
-        this.nome = nome;
-    }
-
-
-}
-
 public abstract class Candidato {
     private String nome;
     public int codCandidato;
