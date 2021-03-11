@@ -1,0 +1,8 @@
+br/com/unittestexample/gereciamento/GerenciamentoListaTarefas.java
+ br.com.unittestexample.gereciamento.GerenciamentoListaTarefas
+br/com/unittestexample/dominio/ListaTarefas.java
+ br.com.unittestexample.dominio.ListaTarefas
+br/com/unittestexample/dominio/Tarefa.java
+ br.com.unittestexample.dominio.Tarefa
+br/com/unittestexample/gereciamento/GerenciamentoTarefas.java
+ br.com.unittestexample.gereciamento.GerenciamentoTarefas
