@@ -2,7 +2,7 @@ package br.com.unittestexample.dominio;
 
 import java.util.HashMap;
 
-public class ListaTarefas {
+public class ListaTarefas extends Tarefa {
 
     HashMap<Integer, Tarefa> listaTarefasDiaSemana;
     HashMap<Integer, Tarefa> listaTarefasFinalSemana;

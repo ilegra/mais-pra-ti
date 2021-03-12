@@ -29,8 +29,8 @@ public class GerenciamentoTarefas {
     public Tarefa obterTarefa(HashMap<Integer, Tarefa> listaTarefas, Integer id){
         if(listaTarefas.containsKey(id) == false){
             return null;
-        }else{
-        return listaTarefas.get(id);}
+        }
+        return listaTarefas.get(id);
 
     }
 
