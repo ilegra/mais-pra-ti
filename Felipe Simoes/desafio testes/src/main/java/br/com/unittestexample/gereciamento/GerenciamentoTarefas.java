@@ -36,7 +36,7 @@ public class GerenciamentoTarefas {
 
     public boolean editarTarefa(HashMap<Integer, Tarefa> listaTarefas, Integer id, String titulo, String descricao){
 
-        if(listaTarefas.containsKey(id) != false){
+        if(listaTarefas.containsKey(id) == false){
             return false;
         }
 
@@ -58,7 +58,7 @@ public class GerenciamentoTarefas {
             return false;
         }
 
-        Tarefa tarefa = listaTarefas.remove(id.toString());
+        Tarefa tarefa = listaTarefas.remove(id));
 
         return  true;
     }
