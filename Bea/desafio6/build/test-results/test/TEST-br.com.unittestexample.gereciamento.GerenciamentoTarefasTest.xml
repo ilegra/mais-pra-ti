@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.unittestexample.gereciamento.GerenciamentoTarefasTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-16T02:06:06" hostname="DESKTOP-PHLG74P" time="0.028">
+  <properties/>
+  <testcase name="testObterTarefa()" classname="br.com.unittestexample.gereciamento.GerenciamentoTarefasTest" time="0.028"/>
+  <system-out><![CDATA[{1=Tarefa{, titulo='Titulo', descricao='Descricao'}}
+1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
