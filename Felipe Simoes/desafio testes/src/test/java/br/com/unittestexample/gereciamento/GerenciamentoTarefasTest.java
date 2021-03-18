@@ -1,13 +1,13 @@
 package br.com.unittestexample.gereciamento;
 
 import br.com.unittestexample.dominio.Tarefa;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-//import org.assertj.core.api.Assertions;
+import static org.junit.jupiter.api.Assertions.*;
 
 class GerenciamentoTarefasTest {
 
@@ -41,26 +41,34 @@ class GerenciamentoTarefasTest {
 
         assertEquals(idTarefaEsperada, idTarefaResultado);
 
-        //TODO configurar dependência biblioteca assertj
-        //Assertions.assertThat(tarefaEsperada).isEqualToComparingFieldByField(tarefaResultado);
+        Assertions.assertThat(tarefaEsperada).isEqualToComparingFieldByField(tarefaResultado);
     }
 
     @Test
     public void testObterTarefa(){
-        //TODO desenvolver teste unitário do método obterTarefa()
+        listaTarefas.put(1, new Tarefa("Estudar", "Spring Boot"));
 
+        Tarefa tarefaResultado = gerenciamentoTarefas.obterTarefa(listaTarefas, 1);
+
+        assertEquals(listaTarefas.get(1), tarefaResultado);
     }
 
     @Test
     public void testEditarTarefa(){
-        //TODO desenvolver teste unitário do método editarTarefa()
-        //TODO corrigir lógica com erro no método editarTarefa()
+        listaTarefas.put(1, new Tarefa("Título", "Descrição"));
+
+        boolean tarefaResultado = gerenciamentoTarefas.editarTarefa(listaTarefas, 1, "Título Editado", "Descrição Editada");
+
+        assertTrue(tarefaResultado);
     }
 
     @Test
     public void testExcluirTarefa(){
-        //TODO desenvolver teste unitário do método excluirTarefa()
-        //TODO corrigir lógica com erro no método excluirTarefa()
+        listaTarefas.put(1, new Tarefa("coisa","tal"));
+
+        boolean tarefaResultado = gerenciamentoTarefas.excluirTarefa(listaTarefas, 1);
+
+        assertTrue(tarefaResultado);
     }
 
 }

@@ -58,7 +58,7 @@ public class GerenciamentoTarefas {
             return false;
         }
 
-        Tarefa tarefa = listaTarefas.remove(id));
+        Tarefa tarefa = listaTarefas.remove(id);
 
         return  true;
     }
