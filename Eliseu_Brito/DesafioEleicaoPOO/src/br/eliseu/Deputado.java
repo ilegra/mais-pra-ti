@@ -2,7 +2,7 @@ package br.eliseu;
 
 public abstract class Deputado {
 
-    Eleicao candidato;
+    private Eleicao candidato;
 
     public Deputado(Eleicao candidato) {
         this.candidato = candidato;

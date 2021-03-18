@@ -2,7 +2,7 @@ package br.eliseu;
 
 public class Eleicao {
 
-    Integer numeroCandidato;
+    protected Integer numeroCandidato;
 
     public Eleicao(Integer numeroCandidato) {
         this.numeroCandidato = numeroCandidato;
