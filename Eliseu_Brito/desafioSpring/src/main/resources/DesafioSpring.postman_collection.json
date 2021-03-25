@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "8583c4a2-f579-4eb3-b4dc-d696d6c7918e",
+		"name": "DesafioSpring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "IncluirDisciplina",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Geografia I\",\r\n    \"descricao\":\"Estudo da geografia do RS\",\r\n    \"iniciaEm\":\"2021-04-02T05:00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/disciplina",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disciplina"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IncluirDisciplina para testes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Teste ultima hora apos ajuste para sao paulo\",\r\n    \"descricao\":\"Estudo da geografia do RS\",\r\n    \"criadoEm\":\"2021-03-20T08:11:05\",\r\n    \"iniciaEm\":\"2021-04-02T05:00:00\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/disciplina",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disciplina"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IncluirDisciplina com Id para Exception",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"nome\":\"Geografia I\",\r\n    \"descricao\":\"Estudo da geografia do RS\",\r\n    \"iniciaEm\":\"2021-04-02T05:00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/disciplina",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disciplina"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscaDisciplinas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/disciplina",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disciplina"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Disciplina por Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/disciplina/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disciplina",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Disciplinas criadas na ultima hora",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/disciplina/ultimaHora",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disciplina",
+						"ultimaHora"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Geografia I editada\",\r\n    \"descricao\":\"Estudo da geografia do RS editada\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/disciplina/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disciplina",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Geografia I editada\",\r\n    \"descricao\":\"Estudo da geografia do RS editada\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/disciplina/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disciplina",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
