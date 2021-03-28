@@ -1,7 +1,10 @@
 package com.eliseu.desafioSpring.domain;
 
-import javax.persistence.*;
-import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.time.LocalDateTime;
 
 @Entity
 public class Disciplina {
@@ -11,9 +14,8 @@ public class Disciplina {
     private Long id;
     private String nome;
     private String descricao;
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date criadoEm;
-    private Date iniciaEm;
+    private LocalDateTime criadoEm;
+    private LocalDateTime iniciaEm;
 
     public Long getId() {
         return id;
@@ -39,19 +41,19 @@ public class Disciplina {
         this.descricao = descricao;
     }
 
-    public Date getCriadoEm() {
+    public LocalDateTime getCriadoEm() {
         return criadoEm;
     }
 
-    public void setCriadoEm(Date criadoEm) {
+    public void setCriadoEm(LocalDateTime criadoEm) {
         this.criadoEm = criadoEm;
     }
 
-    public Date getIniciaEm() {
+    public LocalDateTime getIniciaEm() {
         return iniciaEm;
     }
 
-    public void setIniciaEm(Date iniciaEm) {
+    public void setIniciaEm(LocalDateTime iniciaEm) {
         this.iniciaEm = iniciaEm;
     }
 }

@@ -6,6 +6,7 @@ import com.eliseu.desafioSpring.repository.DisciplinaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
@@ -27,7 +28,7 @@ public class DisciplinaService {
     }
 
     public Disciplina adicionarDisciplina(Disciplina disciplina) throws DisciplinaException {
-        disciplina.setCriadoEm(new Date(currentTimeMillis()));
+        disciplina.setCriadoEm(LocalDateTime.now());
         if (disciplina.getId() != null) {
             throw new DisciplinaException("Disciplina", "adicionarDisciplina");
         }
